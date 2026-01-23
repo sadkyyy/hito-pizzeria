@@ -5,7 +5,7 @@ import React from "react";
 
 function Navbar() {
 const total = 25000;
-  const token = false; // cámbialo a true para probar
+  const token = false;
 
   return (
     <nav className="navbar navbar-dark bg-dark px-3">
@@ -14,10 +14,10 @@ const total = 25000;
 
       <div className="d-flex gap-2 ms-auto">
 
-        {/* SIEMPRE visibles */}
+        {/* visibles */}
         <button className="btn btn-outline-light">🍕 Home</button>
 
-        {/* SOLO con token */}
+        {/*con token */}
         {token && (
           <>
             <button className="btn btn-outline-light">🔓 Profile</button>
@@ -25,7 +25,7 @@ const total = 25000;
           </>
         )}
 
-        {/* SOLO sin token */}
+        {/*sin token */}
         {!token && (
           <>
             <button className="btn btn-outline-success">🔐 Login</button>
