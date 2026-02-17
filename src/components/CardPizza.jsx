@@ -1,34 +1,18 @@
-
 import React from "react";
 
-function CardPizza({name, price, ingredients = [], imagenUrl }) {
- 
+
+function CardPizza ({pizza}){
   return (
-   <div className="card mb-4">
-      <img src={imagenUrl} className="card-img-top" alt={name} />
-    <div className="card-body text-center">
-        <h5 className="card-title">Pizza {name}</h5>
+    <div>
+      <h2>{pizza.name}</h2>
+      <p>{pizza.price}</p>
 
-
-      <p className="card-text">
-          <strong>Ingredientes:</strong><br />
-          🍕 {ingredients.join(", ")}
-        </p>
-
-        <h6 className="mb-3">Precio: ${price}</h6>
-
-        <div className="d-flex justify-content-between">
-          <button className="btn btn-outline-secondary btn-sm">
-            Ver más 👀
-          </button>
-          <button className="btn btn-dark btn-sm">
-            Añadir 🛒
-          </button>
-        </div>
-      </div>
+      <ul>
+        {pizza.ingredients.map((ingredient) => (
+          <li key={ingredient}>{ingredient}</li>
+        ))}
+      </ul>
     </div>
-
   );
 }
-
 export default CardPizza;

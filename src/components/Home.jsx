@@ -1,11 +1,23 @@
 import React from "react";
-import CardPizza from "./CardPizza.jsx";
-
+import { pizzas } from "./pizzas";
+import CardPizza from "./Cardpizza";
 
 function Home() {
    return (
   <div className="container mt-4">
-      <div className="row">
+    {pizzas.map((pizza) => (
+      <CardPizza 
+      key={pizza.id}
+      pizza={pizza}
+      imagen = {pizza.imagenUrl}
+      name={pizza.name}
+      price={pizza.price}
+      ingredients={pizza.ingredients}
+          
+      />
+    ))}
+    
+      {/* <div className="row">
         
         <div className="col-md-4">
 <CardPizza
@@ -34,7 +46,7 @@ imagenUrl="https://www.sortirambnens.com/wp-content/uploads/2019/02/pizza-de-pep
 />
   </div>
 
-        </div>
+        </div> */}
     </div>
 
   );

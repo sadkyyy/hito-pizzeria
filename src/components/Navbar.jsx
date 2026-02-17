@@ -17,7 +17,7 @@ const total = 25000;
         {/* visibles */}
         <button className="btn btn-outline-light">🍕 Home</button>
 
-        {/*con token */}
+      
         {token && (
           <>
             <button className="btn btn-outline-light">🔓 Profile</button>
@@ -25,7 +25,7 @@ const total = 25000;
           </>
         )}
 
-        {/*sin token */}
+      
         {!token && (
           <>
             <button className="btn btn-outline-success">🔐 Login</button>
@@ -33,7 +33,6 @@ const total = 25000;
           </>
         )}
 
-        {/* SIEMPRE visible */}
         <button className="btn btn-warning">
           🛒 Total: ${total}
         </button>

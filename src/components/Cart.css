@@ -1,0 +1,41 @@
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.izq{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comprarbutton {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.info{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.item img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;}
+    
+.total p{
+font-size: 27px;
+font-weight: bold;
+}

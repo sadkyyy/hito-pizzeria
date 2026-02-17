@@ -8,16 +8,17 @@ import Footer from "./components/Footer.jsx"
 import Header from "./components/Header.jsx";
 import Register from "./components/Register.jsx";
 import Login from "./components/Login.jsx";
-
+import Cart from "./components/Cart.jsx";
 function App() {
 return (
   <>
   
   <Navbar/>
-  <Register/>
-  <Login/>
+  {/* <Register/>
+  <Login/> */}
   <Header/>
-  {/* <Home/> */}
+  <Home/>
+  <Cart/>
   <Footer/>
 
 
